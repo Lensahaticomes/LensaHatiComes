@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- HTML Meta Tags -->
+	<title>Lensa Hati Comes</title>
+	<meta name="description" content="Whatsapp Form">
+	
+	<!-- <link rel="stylesheet" href="styles.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+	<style>
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #E8ECEF;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #37474F;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.header-content {
+    display: inline-block;
+}
+
+/* Profile Pic */
+.profile-pic {
+    width: 70%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Text Container (Mobile-First) */
+.text-container {
+    width: 100%; /* Make the container full width by default */
+    max-width: 100%; /* Ensure it doesn't shrink */
+    margin: 10px auto; /* Center it with minimal margins */
+    padding: 0 20px; /* Keep the left/right padding */
+}
+
+.text-container p {
+    text-align: left;
+    font-size: 16px;
+    color: #455A64;
+    margin: 0;
+    padding: 20px;
+}
+.text-container .p2 {
+    font-size: 20px;
+    text-align: center; /* Left-aligned */
+    padding-bottom: 0;
+}
+
+/* Responsive adjustments for tablets */
+@media (min-width: 768px) {
+    .text-container {
+        max-width: 800px; /* For tablets and larger screens */
+        margin: 10px auto; /* Center with wider margins */
+    }
+}
+
+/* Responsive adjustments for desktops */
+@media (min-width: 1200px) {
+    .text-container {
+        max-width: 1000px; /* Increase max-width for desktops */
+        margin: 10px auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .text-container {
+        max-width: 960px;
+        margin: 10px auto;
+    }
+}
+
+/* Text Box */
+.text-box {
+    border: 2px solid #455A64;
+    padding: 20px 30px;
+    border-radius: 5px;
+    background-color: #455A64;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.text-box p {
+    text-align: left;
+    color: white;
+    font-size: 16px;
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 768px) {
+    .text-box {
+        width: 70%;
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .text-box {
+        width: 50%;
+        max-width: 1000px;
+    }
+}
+
+/* Text Button Section */
+.text-button {
+    margin-top: 20px;
+    text-align: center; /* Center content inside the container */
+    margin-bottom: -25px;
+    padding: 0 20px; /* Add some padding for mobile */
+}
+
+/* Responsive .choose-text */
+.choose-text {
+    font-size: 18px; /* Base font size for mobile */
+    font-weight: bold;
+    color: #37474F;
+    margin: 0;
+    padding-bottom: 20px;
+}
+h2.choose-text {
+    font-size: clamp(18px, 4vw, 28px); /* Responsive font size */
+    font-weight: bold;
+    color: #37474F;
+    text-align: center;
+    margin: 0;
+}
+
+/* Horizontal Line Container */
+.hr-container {
+    width: 100%; /* Full width on mobile */
+    margin: 10px auto; /* Center the container with auto margins */
+}
+
+/* Line Break */
+.line-break {
+    width: 100%; /* Full width on mobile */
+    border: none;
+    border-top: 1px solid #455A64;
+    margin: 10px 0;
+}
+
+/* Responsive adjustments for tablets */
+@media (min-width: 768px) {
+    .text-button {
+        padding: 0 50px; /* Add extra padding on wider screens */
+    }
+
+    .choose-text {
+        font-size: 20px; /* Larger font size on tablets */
+    }
+
+    .hr-container {
+        width: 60%; /* Narrower width for tablets */
+    }
+}
+
+/* Responsive adjustments for desktops */
+@media (min-width: 1200px) {
+    .text-button {
+        padding: 0 100px; /* More padding for larger screens */
+    }
+
+    .choose-text {
+        font-size: 22px; /* Slightly larger text for desktops */
+    }
+
+    .hr-container {
+        width: 40%; /* Even narrower for desktops */
+    }
+}
+
+
+/* Buttons Section */
+.buttons-section {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.btn {
+    background-color: #455A64;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    width: 120px;
+    height: 40px;
+    margin: 0 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1C313A;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    background-color: #E8ECEF;
+    padding: 20px;
+    color: #455A64;
+    text-align: center;
+}
+
+.social-links a {
+    color: #455A64;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #1C313A;
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #455A64;
+}
+
+/* Mobile-Specific (e.g., 600px and below) */
+@media (max-width: 600px) {
+    .mobile-text {
+        display: block;
+    }
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="/LogoLensaHatiComes.jpg" alt="Profile Picture" class="profile-pic">
+        </div>
+		<br><br>
+    </header>
+
+      <!-- WhatsApp Contact Form -->
+<div class="whatsapp-form">
+  <h4>WhatsApp Form</h4>
+  <form id="whatsappForm" onsubmit="openWhatsApp(event)">
+    <input type="text" id="nama" placeholder="Nama..." required>
+    <input type="text" id="majlis" placeholder="Jenis majlis / acara..." required>
+    <input type="text" id="tarikh" placeholder="Tarikh..." required>
+    <input type="text" id="lokasi" placeholder="Lokasi..." required>
+    <br>
+    <button type="submit" class="btn">Send</button>
+  </form>
+</div>
+
+<script>
+  function openWhatsApp(event) {
+  event.preventDefault(); // Prevent form submission
+
+  // Get input values
+  const nama = document.getElementById('nama').value;
+  const majlis = document.getElementById('majlis').value;
+  const tarikh = document.getElementById('tarikh').value;
+  const lokasi = document.getElementById('lokasi').value;
+
+  // Define prefix texts and combine them with user input
+  const message = `Nak Hire Photographer:\n\nNama: ${nama}\nMajlis: ${majlis}\nTarikh: ${tarikh}\nLokasi: ${lokasi}`;
+
+  const phoneNumber = '60126853756'; // Replace with your phone number in international format
+  const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+
+  // Open WhatsApp with the combined message
+  window.open(whatsappUrl, '_blank'); // Open in a new tab
+}
+</script>
+
+      <style>
+        .whatsapp-form {
+  text-align: center; /* Center the form */
+  margin: 20px 0; /* Add margin for spacing */
+}
+.whatsapp-form h4 {
+  margin-bottom: 5px; /* Space between header and input box */
+}
+.whatsapp-form input {
+  width: 90%; /* Responsive width */
+  max-width: 600px; /* Max width for larger screens */
+  padding: 10px; /* Add padding */
+  margin-bottom: 10px; /* Space between input and button */
+  border: 2px solid #455A64; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+}
+.whatsapp-form button {
+  background-color: #455A64; /* Button color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+}
+.whatsapp-form button:hover {
+  background-color: #1C313A; /* Darker on hover */
+}
+
+      </style>
+
+      </body>
+</html>
